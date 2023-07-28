@@ -5,6 +5,7 @@ Project made to understand how AI Face recognition works.
 
 # Used:
 * OpenCV
+* LPBH
 * Personal images
 * Trained the classifier
 
