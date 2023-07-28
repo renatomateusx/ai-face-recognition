@@ -18,7 +18,7 @@ Project made to understand how AI Face recognition works.
 * Compress it to a YourName.zip
 * Run the follow code:
 
-```python
+```Python
   import zipfile
   path = '/pathTo/YourName.zip'
   zip_object = zipfile.ZipFile(file=path, mode='r')
@@ -40,9 +40,15 @@ Project made to understand how AI Face recognition works.
   
     return np.array(ids), faces
 ```
+```Python
+  ids, faces = get_image_data()
+  
+  ids, faces
+```
+
  * Creating the Classifier:
 
-```python
+```Python
   lbph_classifier = cv2.face.LBPHFaceRecognizer_create()
   lbph_classifier.train(faces, ids)
   lbph_classifier.write('lbph_classifierr.yml')
