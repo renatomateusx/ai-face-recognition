@@ -16,6 +16,10 @@ while (True):
         cv2.rectangle(image, (x, y), (x + w, y + h), (0,0,255), 2)
         id, confidence = face_recognizer.predict(image_face)
         name = ""
+        # ID IS 9 BECAUSE THE IMAGE HAS SOMETHING LIKE THIS: RENATO.9.jpg. The right thing to do is the server
+        # process the image and save it as the same as the ID key for searching the user.
+        # When you get the ID you can fetch on database and get the right information from the user.
+        # This is used for fetching criminal records information and identify the criminal face.
         if id == 9:
             name = 'Renato'
 
